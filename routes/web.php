@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('website-views.index');
 });
+
+Route::get('/login', function () {
+    return view('website-views.login');
+});
