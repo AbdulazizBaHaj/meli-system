@@ -19,11 +19,13 @@
         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous">
     </script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     @yield('styles')
     @yield('scripts')
 </head>
 
-<body>
+<body style="background-color: #F8F8F8;">
     @yield('body', 'Error 404')
 </body>
 
