@@ -104,6 +104,11 @@
     border-radius: 0px;
 }
 
+.text-link {
+    color: #ff2a38;
+    font-weight: 700;
+}
+
 /* ------------------------------------------
  Responsive Grid Media Queries - 1280, 1024, 768, 480
   1280-1024   - desktop (default grid)

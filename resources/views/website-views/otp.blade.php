@@ -22,7 +22,7 @@
                                 </p>
                             </div>
                             <div class="container white-form-div d-flex flex-column">
-                                <p for="" class="label-text mb-3">Enter Code 📱</p>
+                                <p class="label-text mb-3">Enter Code 📱</p>
                                 <div class="input-group input-group-lg otp-div">
                                     <input type="text" class="form-control text-center otp-input" id="otpCode"
                                         maxlength="5" required />
@@ -33,6 +33,9 @@
                                         Code must be 5 digits.
                                     </div>
                                 </div>
+
+                                <p class="label-text mt-5 text-center">Didn't receive OTP? <a href="" class="text-link">Resend</a></p>
+
                                 <div class="mt-auto text-center">
                                     <button class="btn btn-danger btn-style" type="submit">Submit</button>
                                     <p class="sm-text-rights mt-3">© MELI All rights reserved.</p>
