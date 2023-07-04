@@ -25,10 +25,10 @@
                             <div class="container white-form-div d-flex flex-column">
                                 <p for="" class="label-text mb-3">Let’s Start Now 🔥</p>
                                 <div class="input-group mb-3">
-                                    <span class="input-group-text border border-end-0 bg-transparent"><i
+                                    <span class="input-group-text border border-end-0 rounded-0 bg-transparent"><i
                                             class="bi bi-telephone"></i></span>
                                     <span
-                                        class="input-group-text border border-start-0 border-end-0 bg-transparent">+966</span>
+                                        class="input-group-text border border-start-0 rounded-0 border-end-0 bg-transparent">+966</span>
                                     <input type="text" class="form-control" id="phoneNum" placeholder="Phone Number"
                                         maxlength="9" required />
                                     <div class="valid-feedback">
@@ -39,7 +39,8 @@
                                     </div>
                                 </div>
                                 <div class="mt-auto text-center">
-                                    <button class="btn btn-danger btn-style" type="submit">Login</button>
+                                    <a href="{{ url('/otp') }}">
+                                        <button class="btn btn-danger btn-style" type="button">Login</button></a>
                                     <p class="sm-text-rights mt-3">© MELI All rights reserved.</p>
                                 </div>
                             </div>

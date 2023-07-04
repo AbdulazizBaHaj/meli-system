@@ -104,6 +104,10 @@
     border-radius: 0px;
 }
 
+#otpCode, #phoneNum {
+    border-radius: 0;
+}
+
 .text-link {
     color: #ff2a38;
     font-weight: 700;
