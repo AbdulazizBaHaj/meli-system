@@ -60,6 +60,6 @@
     </div>
 
 @section('scripts')
-    <script src="assets/js/website.js"></script>
+    <script src="assets/js/website/login-page.js"></script>
 @endsection
 @endsection
