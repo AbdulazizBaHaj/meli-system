@@ -20,6 +20,7 @@
     </script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" href="assets/images/icon.png" type="image/png">
 
     @yield('styles')
     @yield('scripts')
