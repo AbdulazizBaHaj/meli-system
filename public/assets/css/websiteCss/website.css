@@ -90,6 +90,19 @@
     color: #333333;
 }
 
+.otp-div {
+    margin: 0 auto;
+    width: 200px;
+}
+
+.otp-input {
+    font-family: "Poppins", sans-serif;
+    font-size: 80px;
+    letter-spacing: 0.5em;
+    font-weight: 600;
+    color: #333333;
+}
+
 /* ------------------------------------------
  Responsive Grid Media Queries - 1280, 1024, 768, 480
   1280-1024   - desktop (default grid)

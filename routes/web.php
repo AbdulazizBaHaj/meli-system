@@ -24,3 +24,7 @@ Route::get('/home', function () {
 Route::get('/login', function () {
     return view('website-views.login');
 });
+
+Route::get('/otp', function () {
+    return view('website-views.otp');
+});

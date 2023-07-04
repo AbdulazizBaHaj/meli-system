@@ -23,11 +23,12 @@
     <link rel="icon" href="assets/images/icon.png" type="image/png">
 
     @yield('styles')
-    @yield('scripts')
 </head>
 
 <body style="background-color: #F8F8F8;">
     @yield('body', 'Error 404')
+
+    @yield('scripts')
 </body>
 
 </html>
