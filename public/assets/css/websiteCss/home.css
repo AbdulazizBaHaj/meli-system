@@ -124,16 +124,30 @@ nav .navbar-nav li a {
     color: #ff2a38;
 }
 
+.section-style {
+    width: 80%;
+}
+
 /* Screens narrower than 360px */
 @media only screen and (max-width: 359px) {
+    .section-style {
+        width: 100%;
+    }
 }
 
 /* Screens between 360px and 575px */
 @media only screen and (max-width: 575px) and (min-width: 360px) {
+    .section-style {
+        width: 100%;
+    }
 }
 
 /* Screens between 576px and 899px */
 @media only screen and (max-width: 899px) and (min-width: 576px) {
+    .section-style {
+        width: 100%;
+    }
+
     .card-title-css {
         font-size: 12px;
     }
@@ -149,6 +163,10 @@ nav .navbar-nav li a {
 
 /* Screens between 900px and 1249px */
 @media only screen and (max-width: 1249px) and (min-width: 900px) {
+    .section-style {
+        width: 100%;
+    }
+
     .card-title-css {
         font-size: 12px;
     }

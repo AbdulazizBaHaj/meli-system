@@ -66,7 +66,7 @@
     </section>
 
     {{-- Our Partners --}}
-    <section>
+    <section class="m-auto section-style">
         <div class="container text-center py-5 py-xl-6 px-5">
             <div class="hr-line mb-3"></div>
             <div class="row">
@@ -90,7 +90,7 @@
     </section>
 
     {{-- MELI Featurs --}}
-    <section>
+    <section class="m-auto section-style">
         <div class="container text-center py-5 py-xl-6 px-5">
             <div class="row m-auto">
                 <div class="col-md m-1">
