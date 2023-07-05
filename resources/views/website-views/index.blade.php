@@ -187,6 +187,42 @@
                 </div>
             </div>
     </section>
+
+    {{-- What We Do --}}
+    <section class="m-auto section-style">
+        <div class="container py-5 py-xl-6 px-5">
+            <div class="row no-gutter">
+                {{-- Text Half --}}
+                <div class="col-md-6 p-0 m-0">
+                    <div class="wwd d-flex align-items-center text-div">
+                        <div class="container">
+                            <div class="container text-half">
+                                <div class="hr-line mb-3"></div>
+                                <h1 class="header-text">WHAT WE DO</h1>
+                                <p class="sm-text">MELI acquires the latest skills, knowledge and expertise through its
+                                    partnerships with some of the world's best logistics educational providers, to offer the
+                                    participants a variety of educational and training programs that would suit their
+                                    training needs. By adapting the "learning by doing" methodology as one of the basic
+                                    approaches applied in the programs, MELI assures that graduates will be equipped with
+                                    strong tools enabling them to contribute to the success of their organizations.</p>
+                                <button class="btn btn-light discover-btn text-center me-2 mt-5" type="button">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Img Half --}}
+                <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center bg-image image">
+                    <div class="d-flex align-items-center">
+                        <div class="container">
+                            <img src="assets/images/websiteImg/graphic-whatwedo.png" alt=""
+                                class="center-vector img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script>
         document.addEventListener('click', function(event) {
             // If the target of the event is not inside '.navbar-collapse'
