@@ -80,3 +80,92 @@ nav .navbar-nav li a {
     background-size: cover;
     position: relative;
 }
+
+.partner-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #333333;
+}
+
+.hr-line {
+    width: 70px;
+    height: 5px;
+    border-width: 0;
+    background-color: #ff2a38;
+}
+
+.card-title-css {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #333333;
+}
+
+.feat-icon-white-red {
+    background: #ff2a38;
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+}
+
+.feat-icon-red-blue {
+    background: #2afff1;
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    color: #ff2a38;
+}
+
+/* Screens narrower than 360px */
+@media only screen and (max-width: 359px) {
+}
+
+/* Screens between 360px and 575px */
+@media only screen and (max-width: 575px) and (min-width: 360px) {
+}
+
+/* Screens between 576px and 899px */
+@media only screen and (max-width: 899px) and (min-width: 576px) {
+    .card-title-css {
+        font-size: 12px;
+    }
+
+    .feat-icon-white-red {
+        font-size: 20px;
+    }
+
+    .feat-icon-red-blue {
+        font-size: 20px;
+    }
+}
+
+/* Screens between 900px and 1249px */
+@media only screen and (max-width: 1249px) and (min-width: 900px) {
+    .card-title-css {
+        font-size: 12px;
+    }
+
+    .feat-icon-white-red {
+        font-size: 20px;
+    }
+
+    .feat-icon-red-blue {
+        font-size: 20px;
+    }
+}
+
+/* Screens between 1250px and 1649px */
+@media only screen and (max-width: 1649px) and (min-width: 1250px) {
+}
+
+/* Screens wider than 1650px */
+@media only screen and (min-width: 1650px) {
+}

@@ -42,29 +42,151 @@
         </div>
     </nav>
 
-    <div class="container-fluid p-5 grid-background">
-        <div class="container p-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-8">
-                        <h1 class="hero-text">Discover <span class="red-span">MELI's</span> Comprehensive <span
-                                class="red-span">Training Programs</span></h1>
+    {{-- Jumbatron --}}
+    <section>
+        <div class="container-fluid p-5 grid-background">
+            <div class="container p-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <h1 class="hero-text">Discover <span class="red-span">MELI's</span> Comprehensive <span
+                                    class="red-span">Training Programs</span></h1>
+                        </div>
+                        <div class="col m-auto d-flex justify-content-end">
+                            <button class="btn btn-light discover-btn text-center me-2" type="button">Discover Now <i
+                                    class="bi bi-box-arrow-up-right lgin-icon"></i></button>
+                        </div>
                     </div>
-                    <div class="col m-auto d-flex justify-content-end">
-                        <button class="btn btn-light discover-btn text-center me-2" type="button">Discover Now <i
-                            class="bi bi-box-arrow-up-right lgin-icon"></i></button>
+                </div>
+                <div class="text-center mt-5">
+                    <img src="assets/images/websiteImg/jumbtronimg.png" alt="" class="m-auto img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Our Partners --}}
+    <section>
+        <div class="container text-center py-5 py-xl-6 px-5">
+            <div class="hr-line mb-3"></div>
+            <div class="row">
+                <div class="col-md-5">
+                    <p class="partner-text">Our Trusted Partners and our proud investors around the globe</p>
+                </div>
+                <div class="col-md p-1">
+                    <img src="assets/images/websiteImg/partner-IOSCM.png" alt="" class="img-fluid m-auto">
+                </div>
+                <div class="col-md p-1">
+                    <img src="assets/images/websiteImg/partner-FHM.png" alt="" class="img-fluid m-auto">
+                </div>
+                <div class="col-md p-1">
+                    <img src="assets/images/websiteImg/partner-JLONTBS.png" alt="" class="img-fluid m-auto">
+                </div>
+                <div class="col-md p-1">
+                    <img src="assets/images/websiteImg/partner-HR.png" alt="" class="img-fluid m-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- MELI Featurs --}}
+    <section>
+        <div class="container text-center py-5 py-xl-6 px-5">
+            <div class="row m-auto">
+                <div class="col-md m-1">
+                    <div class="card rounded-0" style="max-width: 350px;">
+                        <div class="row g-0">
+                            <div class="col-md-3 p-1">
+                                <div class="m-auto feat-icon-white-red d-flex justify-content-center align-items-center"><i
+                                        class="bi bi-globe"></i></div>
+                            </div>
+                            <div class="col-md p-2">
+                                <div class="card-body">
+                                    <h5 class="card-title-css m-auto">National Programs</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md m-1">
+                    <div class="card rounded-0" style="max-width: 350px;">
+                        <div class="row g-0">
+                            <div class="col-md-3 p-1">
+                                <div class="m-auto feat-icon-red-blue d-flex justify-content-center align-items-center"><i
+                                        class="bi bi-clipboard2"></i></div>
+                            </div>
+                            <div class="col-md p-2">
+                                <div class="card-body">
+                                    <h5 class="card-title-css m-auto">International Programs</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md m-1">
+                    <div class="card rounded-0" style="max-width: 350px;">
+                        <div class="row g-0">
+                            <div class="col-md-3 p-1">
+                                <div class="m-auto feat-icon-white-red d-flex justify-content-center align-items-center"><i
+                                        class="bi bi-currency-exchange"></i></div>
+                            </div>
+                            <div class="col-md p-2">
+                                <div class="card-body">
+                                    <h5 class="card-title-css m-auto">Funded Programs</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5">
-                <img src="assets/images/websiteImg/jumbtronimg.png" alt="" class="m-auto img-fluid">
+            <div class="row m-auto mt-5">
+                <div class="col-md m-1">
+                    <div class="card rounded-0" style="max-width: 350px;">
+                        <div class="row g-0">
+                            <div class="col-md-3 p-1">
+                                <div class="m-auto feat-icon-red-blue d-flex justify-content-center align-items-center"><i
+                                        class="bi bi-headset-vr"></i></div>
+                            </div>
+                            <div class="col-md p-2">
+                                <div class="card-body">
+                                    <h5 class="card-title-css m-auto">Virtual Reality</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md m-1">
+                    <div class="card rounded-0" style="max-width: 350px;">
+                        <div class="row g-0">
+                            <div class="col-md-3 p-1">
+                                <div class="m-auto feat-icon-white-red d-flex justify-content-center align-items-center"><i
+                                        class="bi bi-person-workspace"></i></div>
+                            </div>
+                            <div class="col-md p-2">
+                                <div class="card-body">
+                                    <h5 class="card-title-css m-auto">Online Programs</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md m-1">
+                    <div class="card rounded-0" style="max-width: 350px;">
+                        <div class="row g-0">
+                            <div class="col-md-3 p-1">
+                                <div class="m-auto feat-icon-red-blue d-flex justify-content-center align-items-center"><i
+                                        class="bi bi-calendar3"></i></div>
+                            </div>
+                            <div class="col-md p-2">
+                                <div class="card-body">
+                                    <h5 class="card-title-css m-auto">Training Calendar</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div>
-        dd
-    </div>
+    </section>
     <script>
         document.addEventListener('click', function(event) {
             // If the target of the event is not inside '.navbar-collapse'
