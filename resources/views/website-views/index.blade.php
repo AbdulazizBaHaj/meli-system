@@ -35,8 +35,9 @@
                         <a class="nav-link" href="#ff">Home</a>
                     </li>
                 </ul>
+                <a href="{{ url('/login') }}">
                 <button class="btn btn-light login-btn text-center me-2" type="button"><i
-                        class="bi bi-box-arrow-in-right lgin-icon"></i> Login</button>
+                        class="bi bi-box-arrow-in-right lgin-icon"></i> Login</button></a>
                 <button class="btn btn-light text-center me-5 lang-btn" type="button">Ar</button>
             </div>
         </div>
@@ -205,7 +206,8 @@
                                     training needs. By adapting the "learning by doing" methodology as one of the basic
                                     approaches applied in the programs, MELI assures that graduates will be equipped with
                                     strong tools enabling them to contribute to the success of their organizations.</p>
-                                <button class="btn btn-light discover-btn text-center me-2 mt-5" type="button">Contact Us</button>
+                                <button class="btn btn-light discover-btn text-center me-2 mt-5" type="button">Contact
+                                    Us</button>
                             </div>
                         </div>
                     </div>
@@ -223,6 +225,58 @@
             </div>
         </div>
     </section>
+
+    {{-- Our Top Programs  --}}
+    <section class="m-auto section-style">
+        <div class="container py-5 py-xl-6 px-5">
+            <div class="hr-line-blue mb-2 m-auto"></div>
+            <h1 class="header-text text-center">Our Top Programs</h1>
+
+            <div class="container mt-5 mb-2">
+                <div class="row" id="progFilter">
+                    <div class="col-md prog-filter active">
+                        Cat
+                    </div>
+                    <div class="col-md prog-filter">
+                        Cat
+                    </div>
+                    <div class="col-md prog-filter">
+                        Cat
+                    </div>
+                    <div class="col-md prog-filter">
+                        Cat
+                    </div>
+                    <div class="col-md prog-filter">
+                        Cat
+                    </div>
+                    <div class="col-md prog-filter">
+                        Cat
+                    </div>
+                    <div class="col-md prog-filter">
+                        Cat
+                    </div>
+                    <div class="col-md prog-filter">
+                        Cat
+                    </div>
+                </div>
+                <div>
+                    <div class="dropdown-center text-center" id="dropdownProgFilter">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Programs Catagories
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cat 1</a></li>
+                            <li><a class="dropdown-item" href="#">Cat 2</a></li>
+                            <li><a class="dropdown-item" href="#">Cat 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
         document.addEventListener('click', function(event) {
             // If the target of the event is not inside '.navbar-collapse'
@@ -234,6 +288,18 @@
                 });
             }
         });
+
+        var header = document.getElementById("progFilter");
+        var btns = header.getElementsByClassName("prog-filter");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active", "");
+                }
+                this.className += " active";
+            });
+        }
     </script>
 
 @endsection
