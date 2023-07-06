@@ -295,7 +295,7 @@ nav .navbar-nav li a {
 }
 
 .who-text {
-    width: 75%;
+    width: 70%;
 }
 
 .overlay-text {
@@ -336,7 +336,7 @@ nav .navbar-nav li a {
 }
 
 .overlay-img {
-    max-width: 450px;
+    max-width: 550px;
 }
 
 @media (max-width: 768px) {
@@ -462,6 +462,10 @@ nav .navbar-nav li a {
 
     .feat-icon-red-blue {
         font-size: 20px;
+    }
+
+    .overlay-img {
+        max-width: 100%;
     }
 }
 

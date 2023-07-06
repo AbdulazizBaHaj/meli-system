@@ -365,7 +365,7 @@
     </section>
 
     {{-- Portal Scrion --}}
-    <section class="m-auto section-style">
+    <section class="m-auto">
         <div class="container-fluid p-5 grid-background">
             <div class="container">
                 <h1 class="header-text text-center">Who is <span class="red-span">MELI</span></h1>
