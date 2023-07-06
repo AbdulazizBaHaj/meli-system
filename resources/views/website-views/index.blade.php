@@ -364,6 +364,43 @@
         </div>
     </section>
 
+    {{-- Portal Scrion --}}
+    <section class="m-auto section-style">
+        <div class="container-fluid p-5 grid-background">
+            <div class="container">
+                <h1 class="header-text text-center">Who is <span class="red-span">MELI</span></h1>
+            </div>
+            <div class="container-sm who-text mt-3 mb-3">
+                <p class="sm-text m-auto">
+                    Middle East Logistics Institute (MELI), established in Saudi Arabia in 2010, envisions being the
+                    leading-edge academic institute in the region. MELI seeks to build globally competitive logistics
+                    capacities to the business community in the Kingdom of Saudi Arabia through developing and improving
+                    both the awareness and logistics skills of young professionals, practitioners, managers and executives,
+                    providing them with specialized training in Logistics and Supply Chain Management and obtaining levels
+                    of professional certifications in the field of logistics.
+                </p>
+            </div>
+            <div class="container text-center mt-5">
+                <div class="row">
+                    <div class="col-md" style="position: relative;">
+                        <img src="assets/images/websiteImg/instructor-portal.png" class="m-auto img-fluid mb-5 rounded overlay-img">
+                        <div class="overlay-text w-100 m-auto">
+                            <p class="text-uppercase overlay-h">FOR INSTRUCTORS</p>
+                            <button class="btn btn-danger overlay-btn text-center" type="button">Go To Instructors Portal</button>
+                        </div>
+                    </div>
+                    <div class="col-md" style="position: relative;">
+                        <img src="assets/images/websiteImg/student-portal.png" class="m-auto img-fluid mb-5 rounded overlay-img">
+                        <div class="overlay-text w-100 m-auto">
+                            <p class="text-uppercase overlay-h">FOR STUDENTS</p>
+                            <button class="btn btn-danger overlay-btn text-center" type="button">Go To Students Portal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @section('scripts')
     <script src="assets/js/website/home.js"></script>
 @endsection
