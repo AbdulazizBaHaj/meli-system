@@ -36,8 +36,8 @@
                     </li>
                 </ul>
                 <a href="{{ url('/login') }}">
-                <button class="btn btn-light login-btn text-center me-2" type="button"><i
-                        class="bi bi-box-arrow-in-right lgin-icon"></i> Login</button></a>
+                    <button class="btn btn-light login-btn text-center me-2" type="button"><i
+                            class="bi bi-box-arrow-in-right lgin-icon"></i> Login</button></a>
                 <button class="btn btn-light text-center me-5 lang-btn" type="button">Ar</button>
             </div>
         </div>
@@ -234,11 +234,11 @@
 
             <div class="container mt-5 mb-2">
                 <div class="row" id="progFilter">
-                    <div class="col-md prog-filter active">
-                        Cat
+                    <div class="col-md prog-filter active-filter" onclick="filterSelection('all')">
+                        All
                     </div>
-                    <div class="col-md prog-filter">
-                        Cat
+                    <div class="col-md prog-filter" onclick="filterSelection('ff')">
+                        No
                     </div>
                     <div class="col-md prog-filter">
                         Cat
@@ -261,45 +261,110 @@
                 </div>
                 <div>
                     <div class="dropdown-center text-center" id="dropdownProgFilter">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="btn btn-secondary dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Programs Catagories
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Cat 1</a></li>
-                            <li><a class="dropdown-item" href="#">Cat 2</a></li>
-                            <li><a class="dropdown-item" href="#">Cat 3</a></li>
+                            <li class="dropdown-menu-item" onclick="filterSelection('all')">Cat 1</li>
+                            <li class="dropdown-menu-item" onclick="filterSelection('hh')">Cat 2</li>
+                            <li class="dropdown-menu-item">Cat 3</li>
                         </ul>
                     </div>
                 </div>
             </div>
+
+
+            <div class="fluid-container mt-3">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        @php $cardCount = 0; @endphp
+
+                        @for ($i = 0; $i < 10; $i++)
+                            @if ($cardCount % 3 === 0)
+                                <div class="carousel-item{{ $cardCount === 0 ? ' active' : '' }}">
+                                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                            @endif
+
+                            <div class="col card-filter">
+                                <div class="card h-100">
+                                    <img src="assets\images\websiteImg\prog-01.png" class="card-img-top m-auto img-fluid"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-h5 text-uppercase">CERTIFICATE IN PROCUREMENT AND SUPPLY
+                                            OPERATIONS -
+                                            CIPS</h5>
+                                        <div class="fluid-container mt-2 mb-2">
+                                            <div class="row">
+                                                <div class="col-sm-8">
+                                                    <i class="bi bi-star-fill star-rating d-inline"></i>
+                                                    <i class="bi bi-star-fill star-rating d-inline"></i>
+                                                    <i class="bi bi-star-fill star-rating d-inline"></i>
+                                                    <i class="bi bi-star-fill star-rating d-inline"></i>
+                                                    <i class="bi bi-star star-rating d-inline"></i>
+                                                    <p class="d-inline review-text">(139 review)</p>
+                                                </div>
+                                                <div class="col-sm-4 text-end rating-text">
+                                                    4.9
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container text-center">
+                                            <div class="row">
+                                                <div class="col-lg h-auto">
+                                                    <span class="card-col-title align-bottom"><span><i
+                                                                class="bi bi-calendar3"></i> Course Date</span></span><br>
+                                                    <span class="card-col-val align-top">31.07.2023</span>
+                                                </div>
+                                                <div class="col-lg h-auto">
+                                                    <span class="card-col-title align-bottom"><span><i
+                                                                class="bi bi-clock"></i> Duration</span></span><br>
+                                                    <span class="card-col-val align-top">2 Months</span>
+                                                </div>
+                                                <div class="col-lg h-auto">
+                                                    <span class="card-col-title align-bottom"><span><i
+                                                                class="bi bi-translate"></i> Language</span></span><br>
+                                                    <span class="card-col-val align-top">English</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container text-center">
+                                            <button class="btn btn-light enroll-btn text-center mt-2"
+                                                type="button">Enroll Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @php $cardCount++; @endphp
+                            @if ($cardCount % 3 === 0 || $i === 9)
+                    </div>
+                </div>
+                @endif
+                @endfor
+            </div>
+        </div>
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col text-center">
+                    <button class="btn btn-light next-btn text-center me-2" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <i class="bi bi-caret-left"></i>
+                    </button>
+
+                    <button class="btn btn-light next-btn text-center me-2" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <i class="bi bi-caret-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
     </section>
 
-    <script>
-        document.addEventListener('click', function(event) {
-            // If the target of the event is not inside '.navbar-collapse'
-            if (!event.target.closest('.navbar-collapse')) {
-                // Collapse all '.navbar-collapse' elements
-                var navbarCollapses = document.querySelectorAll('.navbar-collapse');
-                navbarCollapses.forEach(function(navbarCollapse) {
-                    navbarCollapse.classList.remove('show');
-                });
-            }
-        });
-
-        var header = document.getElementById("progFilter");
-        var btns = header.getElementsByClassName("prog-filter");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
-                var current = document.getElementsByClassName("active");
-                if (current.length > 0) {
-                    current[0].className = current[0].className.replace(" active", "");
-                }
-                this.className += " active";
-            });
-        }
-    </script>
-
+@section('scripts')
+    <script src="assets/js/website/home.js"></script>
+@endsection
 @endsection
