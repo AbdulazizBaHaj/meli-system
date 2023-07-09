@@ -151,7 +151,7 @@ nav .navbar-nav li a {
 .header-text {
     font-family: "Poppins", sans-serif;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 54px;
     letter-spacing: 0em;
     color: #333333;
@@ -248,7 +248,7 @@ nav .navbar-nav li a {
 .rating-text {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: right;
@@ -328,6 +328,7 @@ nav .navbar-nav li a {
     text-align: center;
     background: transparent;
     border: 1px solid white;
+    border-radius: 2px;
 }
 
 .overlay-btn:hover {
@@ -338,6 +339,43 @@ nav .navbar-nav li a {
 .overlay-img {
     max-width: 550px;
 }
+
+.gateway-num {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    color: rgba(255, 42, 56, 1);
+}
+
+.gateway-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: rgba(51, 51, 51, 1);
+}
+
+.counting-animation {
+    animation: counting 2s ease-in-out forwards;
+}
+
+.border-end-count {
+    border-right: 1px solid rgba(221, 221, 221, 1);
+}
+
+@keyframes counting {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Screens */
 
 @media (max-width: 768px) {
     #progFilter .prog-filter {
@@ -350,6 +388,10 @@ nav .navbar-nav li a {
 
     .overlay-img {
         max-width: 100%;
+    }
+
+    .border-end-count {
+        border-right: 0px solid rgba(221, 221, 221, 1);
     }
 }
 

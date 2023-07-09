@@ -383,17 +383,75 @@
             <div class="container text-center mt-5">
                 <div class="row">
                     <div class="col-md" style="position: relative;">
-                        <img src="assets/images/websiteImg/instructor-portal.png" class="m-auto img-fluid mb-5 rounded overlay-img">
+                        <img src="assets/images/websiteImg/instructor-portal.png"
+                            class="m-auto img-fluid mb-5 rounded overlay-img">
                         <div class="overlay-text w-100 m-auto">
                             <p class="text-uppercase overlay-h">FOR INSTRUCTORS</p>
-                            <button class="btn btn-danger overlay-btn text-center" type="button">Go To Instructors Portal</button>
+                            <button class="btn btn-danger overlay-btn text-center" type="button">Go To Instructors
+                                Portal</button>
                         </div>
                     </div>
                     <div class="col-md" style="position: relative;">
-                        <img src="assets/images/websiteImg/student-portal.png" class="m-auto img-fluid mb-5 rounded overlay-img">
+                        <img src="assets/images/websiteImg/student-portal.png"
+                            class="m-auto img-fluid mb-5 rounded overlay-img">
                         <div class="overlay-text w-100 m-auto">
                             <p class="text-uppercase overlay-h">FOR STUDENTS</p>
-                            <button class="btn btn-danger overlay-btn text-center" type="button">Go To Students Portal</button>
+                            <button class="btn btn-danger overlay-btn text-center" type="button">Go To Students
+                                Portal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Getway Section --}}
+    <section class="m-auto">
+        <div class="fluid-container py-5 py-xl-6">
+            <div class="row no-gutter justify-content-end w-100 m-0">
+                {{-- Text Half --}}
+                <div class="col-md-5 p-0 m-0">
+                    <div class="wwd d-flex align-items-center text-div">
+                        <div class="container">
+                            <div class="container text-half p-3">
+                                <h1 class="header-text"><span class="red-span">Your Gateway</span> to Excellence in
+                                    Logistics Education</h1>
+                                <div class="row mt-5">
+                                    <div class="col-md text-center border-end-count">
+                                        <p class="m-auto">
+                                            <span id="course-num" class="gateway-num counting-animation">+</span><span
+                                                id="course-value" class="gateway-num counting-animation">0</span>
+                                            <br>
+                                            <span class="text-uppercase gateway-text">Course</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md text-center border-end-count">
+                                        <p class="m-auto">
+                                            <span id="student-num" class="gateway-num counting-animation">+</span><span
+                                                id="student-value" class="gateway-num counting-animation">0</span>
+                                            <br>
+                                            <span class="text-uppercase gateway-text">Student</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md text-center">
+                                        <p class="m-auto">
+                                            <span id="instructor-num" class="gateway-num counting-animation">+</span><span
+                                                id="instructor-value" class="gateway-num counting-animation">0</span>
+                                            <br>
+                                            <span class="text-uppercase gateway-text">Instructor</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Img Half --}}
+                <div class="col-md-6 d-none d-md-flex justify-content-end align-items-end bg-image image p-0 m-0">
+                    <div class="d-flex align-items-end p-0 m-0">
+                        <div class="container p-0 m-0">
+                            <img src="assets/images/websiteImg/gateway-img.png" alt="" class="img-fluid m-0 p-0">
                         </div>
                     </div>
                 </div>

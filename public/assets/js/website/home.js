@@ -64,7 +64,10 @@ var btns = btnContainer.getElementsByClassName("prog-filter");
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function () {
         var current = document.getElementsByClassName("active-filter");
-        current[0].className = current[0].className.replace(" active-filter", "");
+        current[0].className = current[0].className.replace(
+            " active-filter",
+            ""
+        );
         this.className += " active-filter";
     });
 }
@@ -75,7 +78,48 @@ var btns = btnContainer.getElementsByClassName("dropdown-menu-item");
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function () {
         var current = document.getElementsByClassName("active-filter");
-        current[0].className = current[0].className.replace(" active-filter", "");
+        current[0].className = current[0].className.replace(
+            " active-filter",
+            ""
+        );
         this.className += " active-filter";
     });
 }
+
+// Count numbers
+
+function startCountingAnimation(id, valueElementId, endValue) {
+    const element = document.getElementById(id);
+    const valueElement = document.getElementById(valueElementId);
+    const duration = 2000; // Animation duration in milliseconds
+    const fps = 30; // Frames per second
+    const frameDuration = 1000 / fps; // Duration of each frame in milliseconds
+    const totalFrames = Math.round(duration / frameDuration);
+    const increment = Math.ceil(endValue / totalFrames);
+
+    let currentCount = 0;
+    let frame = 0;
+
+    const countingInterval = setInterval(() => {
+        currentCount += increment;
+        frame++;
+
+        if (currentCount >= endValue) {
+            clearInterval(countingInterval);
+            currentCount = endValue;
+        }
+
+        valueElement.textContent = currentCount;
+
+        if (frame === totalFrames) {
+            element.classList.remove("counting-animation");
+            valueElement.classList.remove("counting-animation");
+        }
+    }, frameDuration);
+}
+
+window.addEventListener("load", () => {
+    startCountingAnimation("course-num", "course-value", 166);
+    startCountingAnimation("student-num", "student-value", 200);
+    startCountingAnimation("instructor-num", "instructor-value", 50);
+});
