@@ -332,9 +332,13 @@ nav .navbar-nav li a {
     border-radius: 2px;
 }
 
+.q-btn:hover,
 .overlay-btn:hover {
     background: #ff2a38;
     border: 1px solid #ff2a38;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid white;
+    border-radius: 2px;
 }
 
 .overlay-img {
@@ -378,6 +382,12 @@ nav .navbar-nav li a {
 
 .feedback-card {
     background: rgba(255, 255, 255, 1);
+    border: 0px;
+    border-radius: 2px;
+}
+
+.news-card {
+    background: transparent;
     border: 0px;
     border-radius: 2px;
 }
@@ -481,6 +491,53 @@ nav .navbar-nav li a {
     width: 40px;
     height: 40px;
 }
+
+.q-div {
+    border-radius: 13px;
+    background-image: url("/assets/images/websiteImg/q-img.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.q-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.q-sm-text {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.q-btn {
+    height: 70px;
+    width: 260px;
+    color: #ff2a38;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
 /* Screens */
 
 @media (max-width: 768px) {
@@ -511,6 +568,7 @@ nav .navbar-nav li a {
         width: 100%;
     }
 
+    .q-btn,
     .overlay-btn {
         height: 40%;
         width: 80%;
@@ -525,6 +583,10 @@ nav .navbar-nav li a {
 
     .overlay-img {
         max-width: 100%;
+    }
+
+    .q-sm-text {
+        width: 100%;
     }
 }
 
@@ -538,6 +600,7 @@ nav .navbar-nav li a {
         width: 100%;
     }
 
+    .q-btn,
     .overlay-btn {
         height: 40%;
         width: 80%;
@@ -552,6 +615,10 @@ nav .navbar-nav li a {
 
     .overlay-img {
         max-width: 100%;
+    }
+
+    .q-sm-text {
+        width: 100%;
     }
 }
 
@@ -577,6 +644,7 @@ nav .navbar-nav li a {
         width: 90%;
     }
 
+    .q-btn,
     .overlay-btn {
         height: 50%;
         width: 80%;
@@ -591,6 +659,10 @@ nav .navbar-nav li a {
 
     .overlay-img {
         max-width: 100%;
+    }
+
+    .q-sm-text {
+        width: 100%;
     }
 }
 
