@@ -459,6 +459,153 @@
         </div>
     </section>
 
+    {{-- Feedback Section --}}
+    <section class="m-auto section-style">
+        <div class="container py-5 py-xl-6 px-5 grid-background">
+            <div class="container py-5 py-xl-6 px-5">
+                <div class="row justify-content-end">
+                    <div class="col-lg-10">
+                        <h1 class="header-text text-center">Our User <span class="red-span">Kind Words</span></h1>
+                        <p class="sm-text text-center">Here are some testimonials from our user after have training courses
+                            on MELI
+                        </p>
+                    </div>
+                    <div class="col-lg-2 m-auto text-center">
+                        <button class="btn btn-light next-btn text-center" type="button"
+                            data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <i class="bi bi-caret-left"></i>
+                        </button>
+
+                        <button class="btn btn-light next-btn text-center" type="button"
+                            data-bs-target="#carouselExample" data-bs-slide="next">
+                            <i class="bi bi-caret-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="carouselExample" class="carousel slide" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        @php
+                            $count = 1;
+                        @endphp
+
+                        @for ($i = 0; $i < 10; $i++)
+                            @if ($i % 3 === 0)
+                                <div class="carousel-item {{ $i === 0 ? 'active' : '' }}">
+                                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                            @endif
+
+                            <div class="col">
+                                <div class="card h-100 feedback-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title feedback-card-title">Card title</h5>
+                                        <p class="card-text feedback-card-desc">I had the privilege of attending MELI's
+                                            courses, and I must say it was a game-changer for my logistics career. The
+                                            instructors were
+                                            industry experts who shared practical knowledge and real-world insights.</p>
+                                        <hr>
+                                        <div class="row container m-auto justify-content-start no-gutter">
+                                            <div class="col-lg-3 text-center">
+                                                <img src="assets/images/websiteImg/feedback-johnDoe.png" alt=""
+                                                    class="img-fluid m-0 p-0 avatar-img">
+                                            </div>
+                                            <div class="col-lg-6 text-start mt-auto mb-auto">
+                                                <span class="feedback-name">John Doe</span>
+                                                <br>
+                                                <span class="feedback-role">Logistics Manager</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @if ($count % 3 === 0 || $i === 9)
+                    </div>
+                </div>
+                @endif
+
+                @php
+                    $count++;
+                @endphp
+                @endfor
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </section>
+
+    {{-- News Section --}}
+    <section class="m-auto section-style">
+        <div class="container py-5 py-xl-6 px-5">
+            <div class="row justify-content-end">
+                <div class="col-lg-10">
+                    <h1 class="header-text text-center">Our Latest <span class="red-span">News</span></h1>
+                </div>
+                <div class="col-lg-2 m-auto text-center">
+                    <button class="btn btn-light next-btn text-center" type="button" data-bs-target="#carouselExample2"
+                        data-bs-slide="prev">
+                        <i class="bi bi-caret-left"></i>
+                    </button>
+
+                    <button class="btn btn-light next-btn text-center" type="button" data-bs-target="#carouselExample2"
+                        data-bs-slide="next">
+                        <i class="bi bi-caret-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5 py-xl-6 px-5">
+            <div id="carouselExample2" class="carousel slide" data-bs-touch="true">
+                <div class="carousel-inner">
+                    @php
+                        $count2 = 1;
+                    @endphp
+
+                    @for ($i = 0; $i < 10; $i++)
+                        @if ($i % 3 === 0)
+                            <div class="carousel-item {{ $i === 0 ? 'active' : '' }}">
+                                <div class="row row-cols-1 row-cols-md-3 g-4">
+                        @endif
+
+                        <div class="col">
+                            <div class="card h-100 feedback-card">
+                                <img src="assets/images/websiteImg/news-img.png" class="card-img-top img-fluid">
+                                <span class="news-tag">New</span>
+                                <div class="card-body">
+                                    <h5 class="card-title news-title">MELI Launches New Course on Supply Chain Optimization
+                                    </h5>
+                                    <p class="card-text news-body">Some quick example text to build on the card title and
+                                        make up the bulk of the card's content.</p>
+
+                                    <div class="row m-auto">
+                                        <div class="col-10 justify-content-start my-auto">
+                                            <small class="text-body-secondary news-date">October 15, 2023</small>
+                                        </div>
+                                        <div class="col-2 justify-content-end text-end">
+                                            <button class="btn btn-light news-btn text-center" type="button">
+                                                <i class="bi bi-arrow-up-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @if ($count2 % 3 === 0 || $i === 9)
+                </div>
+            </div>
+            @endif
+
+            @php
+                $count2++;
+            @endphp
+            @endfor
+        </div>
+        </div>
+    </section>
+    
 @section('scripts')
     <script src="assets/js/website/home.js"></script>
 @endsection
