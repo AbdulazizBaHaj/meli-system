@@ -15,6 +15,7 @@
                 <div class="login d-flex align-items-center form-div">
                     <div class="container">
                         <form action="" class="needs-validation" novalidate>
+                            @csrf
                             <div class="container text-half">
                                 <div class="hr-line mb-3"></div>
                                 <h1 class="header-text">Access Your Account</h1>

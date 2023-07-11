@@ -9,7 +9,7 @@
 @section('body')
     <nav class="navbar navbar-expand-lg navbar-style">
         <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="#">
+            <a class="navbar-brand ms-5" href="home">
                 <img src="assets/images/websiteImg/meli-white-vector.png" alt="Logo" width="100"
                     class="d-inline-block align-text-top">
             </a>
@@ -20,10 +20,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center nav-items">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#ff">Home</a>
+                        <a class="nav-link" href="contact-us">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#ff">Home</a>

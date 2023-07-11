@@ -28,3 +28,7 @@ Route::get('/login', function () {
 Route::get('/otp', function () {
     return view('website-views.otp');
 });
+
+Route::get('/contact-us', function () {
+    return view('website-views.contact-us');
+});

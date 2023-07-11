@@ -51,7 +51,7 @@
 }
 
 nav .navbar-nav li a {
-    color: white !important;
+    color: white;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -60,9 +60,15 @@ nav .navbar-nav li a {
     text-align: center;
 }
 
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+    color: white;
+    font-weight: 600;
+}
+
 .hero-text {
     font-family: "Poppins", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0em;
     text-align: left;
     color: #333333;
@@ -107,7 +113,7 @@ nav .navbar-nav li a {
 
 .card-title-css {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 27px;
     letter-spacing: 0em;
@@ -151,7 +157,7 @@ nav .navbar-nav li a {
 .header-text {
     font-family: "Poppins", sans-serif;
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 54px;
     letter-spacing: 0em;
     color: #333333;
@@ -249,7 +255,7 @@ nav .navbar-nav li a {
 .rating-text {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: right;
@@ -258,7 +264,7 @@ nav .navbar-nav li a {
 
 .card-col-title {
     font-family: "Poppins", sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0em;
@@ -604,6 +610,10 @@ nav .navbar-nav li a {
     .q-sm-text {
         width: 100%;
     }
+
+    .q-title {
+        font-size: 16px;
+    }
 }
 
 /* Screens between 360px and 575px */
@@ -635,6 +645,10 @@ nav .navbar-nav li a {
 
     .q-sm-text {
         width: 100%;
+    }
+
+    .q-title {
+        font-size: 25px;
     }
 }
 
