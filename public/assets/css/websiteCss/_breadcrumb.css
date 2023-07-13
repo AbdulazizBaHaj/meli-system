@@ -1,0 +1,26 @@
+.bc-nav {
+    background: rgba(255, 42, 56, 1);
+    padding: 10px;
+    height: 7vh;
+}
+
+.breadcrumb-item a {
+    color: white;
+}
+
+.breadcrumb-item.active {
+    color: white;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: white;
+}
+
+.breadcrumb {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
