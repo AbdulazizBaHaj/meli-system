@@ -496,18 +496,6 @@ nav .navbar-nav li a {
     width: 40px;
     height: 40px;
 }
-
-.q-sm-text {
-    color: rgba(255, 255, 255, 1);
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: center;
-    width: 60%;
-    margin: auto;
-}
 /* Screens */
 
 @media (max-width: 768px) {
@@ -553,10 +541,6 @@ nav .navbar-nav li a {
     .overlay-img {
         max-width: 100%;
     }
-
-    .q-sm-text {
-        width: 100%;
-    }
 }
 
 /* Screens between 360px and 575px */
@@ -583,10 +567,6 @@ nav .navbar-nav li a {
 
     .overlay-img {
         max-width: 100%;
-    }
-
-    .q-sm-text {
-        width: 100%;
     }
 }
 
@@ -626,10 +606,6 @@ nav .navbar-nav li a {
 
     .overlay-img {
         max-width: 100%;
-    }
-
-    .q-sm-text {
-        width: 100%;
     }
 }
 

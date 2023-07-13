@@ -36,3 +36,7 @@ Route::get('/contact-us', function () {
 Route::get('/calendar', function () {
     return view('website-views.calendar');
 });
+
+Route::get('/programs', function () {
+    return view('website-views.program');
+});

@@ -40,6 +40,18 @@
     border-radius: 2px;
 }
 
+.q-sm-text {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
 @media only screen and (max-width: 359px) {
     .q-title {
         font-size: 16px;
@@ -48,6 +60,10 @@
     .q-btn {
         height: 40%;
         width: 80%;
+    }
+
+    .q-sm-text {
+        width: 100%;
     }
 }
 
@@ -61,6 +77,10 @@
         height: 40%;
         width: 80%;
     }
+
+    .q-sm-text {
+        width: 100%;
+    }
 }
 
 /* Screens between 576px and 899px */
@@ -68,5 +88,9 @@
     .q-btn {
         height: 50%;
         width: 80%;
+    }
+
+    .q-sm-text {
+        width: 100%;
     }
 }

@@ -28,13 +28,10 @@
                         <a class="nav-link" href="calendar">Calendar</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link{{ request()->is('programs') ? ' active' : '' }}" href="programs">Programs</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="contact-us">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ff">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ff">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#ff">Home</a>

@@ -16,11 +16,11 @@
                     <a class="nav-link{{ request()->is('calendar') ? ' active' : '' }}" href="calendar">Calendar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link{{ request()->is('contact-us') ? ' active' : '' }}" href="contact-us">Contact
-                        Us</a>
+                    <a class="nav-link{{ request()->is('programs') ? ' active' : '' }}" href="programs">Programs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link{{ request()->is('#ff') ? ' active' : '' }}" href="#ff">Home</a>
+                    <a class="nav-link{{ request()->is('contact-us') ? ' active' : '' }}" href="contact-us">Contact
+                        Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link{{ request()->is('#ff') ? ' active' : '' }}" href="#ff">Home</a>
