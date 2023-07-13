@@ -235,23 +235,6 @@ a {
     border-radius: 2px;
 }
 
-.footer-icon {
-    color: white;
-    background-color: #ff2a38;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 0px;
-}
-
-.gradient-bg {
-    background: linear-gradient(
-        to top,
-        rgba(255, 42, 56, 0.36),
-        transparent
-    ); /* Replace the color codes with your desired gradient colors */
-}
-
 @media (max-width: 768px) {
     #progFilter .prog-filter {
         display: none;
