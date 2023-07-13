@@ -1,0 +1,73 @@
+.filter-col {
+    border: 1px solid rgba(137, 137, 137, 1);
+    background: white;
+    border-radius: 2px;
+}
+
+.filter-text-h {
+    color: rgba(0, 0, 0, 1);
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
+.filter-text-sm {
+    color: rgba(196, 196, 196, 1);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    cursor: pointer;
+}
+
+.cat-title {
+    color: rgba(155, 155, 155, 1);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.3em;
+    text-align: left;
+}
+
+.cat-item {
+    color: rgba(58, 57, 67, 1);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+.cat-item-num {
+    color: rgba(155, 155, 155, 1);
+}
+
+.form-check-input:checked {
+    background-color: #ff2a38;
+    border-color: #ff2a38;
+}
+
+.form-range {
+    width: 90%;
+}
+
+.form-range::-webkit-slider-thumb {
+    background: #ff2a38;
+}
+
+.price-text {
+    color: rgba(58, 57, 67, 1);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+#priceVal {
+    color: #ff2a38;
+}
