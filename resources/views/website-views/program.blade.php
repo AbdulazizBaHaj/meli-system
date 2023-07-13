@@ -19,7 +19,7 @@
     <section>
         <div class="container">
             <div class="row fluid-container">
-                <div class="col-3 p-2 filter-col">
+                <div class="col-3 p-3 filter-col">
                     <div class="row mb-3">
                         <div class="col d-flex justify-content-start my-auto filter-text-h">
                             Filter
