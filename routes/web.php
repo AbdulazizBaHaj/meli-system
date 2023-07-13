@@ -32,3 +32,7 @@ Route::get('/otp', function () {
 Route::get('/contact-us', function () {
     return view('website-views.contact-us');
 });
+
+Route::get('/calendar', function () {
+    return view('website-views.calendar');
+});

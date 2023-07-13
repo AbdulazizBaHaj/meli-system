@@ -22,10 +22,10 @@
                         <a class="nav-link" href="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contact-us">Contact Us</a>
+                        <a class="nav-link" href="calendar">Calendar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#ff">Home</a>
+                        <a class="nav-link active" aria-current="page" href="contact-us">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#ff">Home</a>
@@ -176,8 +176,7 @@
                         </label>
                     </div>
                     <div class="container text-center">
-                        <button class="btn send-btn text-center mt-5 mx-auto" type="button">Contact
-                            Us</button>
+                        <button class="btn send-btn text-center mt-5 mx-auto" type="button">Send Now</button>
                     </div>
                 </form>
             </div>
