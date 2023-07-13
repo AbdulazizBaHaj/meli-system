@@ -17,7 +17,7 @@
     @include('website-views._breadcrumb')
 
     <section>
-        <div class="container">
+        <div class="fluid-container prog-cards-section">
             <div class="row fluid-container">
                 <div class="col-3 p-3 filter-col">
                     <div class="row mb-3">
@@ -141,7 +141,42 @@
                     </div>
                 </div>
                 <div class="col-9">
-                    2
+                    <div class="row mx-auto">
+                        @for ($i = 1; $i <= 3; $i++)
+                            <div class="col-md my-1">
+                                <div class="card program-card h-100">
+                                    <img src="assets\images\websiteImg\prog-01.png" class="img-fluid">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-title-font">Introduction to Marketing & Customer Services
+                                        </h5>
+
+                                        <div class="row mb-3">
+                                            <div class="col-lg-8">
+                                                <i class="bi bi-star-fill star-rating d-inline"></i>
+                                                <i class="bi bi-star-fill star-rating d-inline"></i>
+                                                <i class="bi bi-star-fill star-rating d-inline"></i>
+                                                <i class="bi bi-star-fill star-rating d-inline"></i>
+                                                <i class="bi bi-star star-rating d-inline"></i>
+                                                <p class="d-inline review-text">(139 review)</p>
+                                            </div>
+                                            <div class="col-lg-4 text-end rating-text">
+                                                4.9
+                                            </div>
+                                        </div>
+
+                                        <div class="row card-date text-center">
+                                            <div class="col-md d-flex justify-content-start my-auto text-center">
+                                                <span><i class="bi bi-calendar3"></i></span>&nbsp;Course Date
+                                            </div>
+                                            <div class="col-md d-flex justify-content-end my-auto text-center">
+                                                09.07.2023
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endfor
+                    </div>
                 </div>
             </div>
         </div>
