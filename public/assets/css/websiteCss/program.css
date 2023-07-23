@@ -94,7 +94,6 @@
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0em;
-    text-align: left;
     color: rgba(187, 187, 187, 1);
 }
 
@@ -117,6 +116,125 @@
     letter-spacing: 0em;
 }
 
+.prog-h {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(51, 51, 51, 1);
+}
+
+.card-col-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(51, 51, 51, 1);
+}
+
+.card-col-val {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #ff2a38;
+}
+
+.title-h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: justify;
+
+    color: #ff2a38;
+}
+
+.paragraph-div {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: justify;
+
+    color: rgba(51, 51, 51, 1);
+
+    width: 100%;
+}
+
+.accordion-h {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: rgba(187, 187, 187, 1);
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button {
+    background-color: rgba(245, 245, 245, 1);
+    color: rgba(0, 0, 0, 1);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.content-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(0, 0, 0, 1);
+}
+
+.content-icon {
+    color: #ff2a38;
+    font-size: 16px;
+}
+
+.prog-price {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #ff2a38;
+}
+
+.enroll-btn {
+    background-color: #ff2a38;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    width: 95%;
+    height: 50px;
+    border-radius: 2px;
+}
+
+@media only screen and (min-width: 899px) {
+    .paragraph-div {
+        width: 85%;
+    }
+
+    .accordion {
+        width: 85%;
+    }
+}
 /* Screens between 576px and 899px */
 @media only screen and (max-width: 899px) and (min-width: 576px) {
     .prog-cards-section {
@@ -140,6 +258,14 @@
     }
 
     .card-date {
+        font-size: 10px;
+    }
+
+    .card-col-title {
+        font-size: 10px;
+    }
+
+    .card-col-val {
         font-size: 10px;
     }
 }

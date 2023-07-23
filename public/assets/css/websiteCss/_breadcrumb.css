@@ -2,6 +2,7 @@
     background: rgba(255, 42, 56, 1);
     padding: 10px;
     height: 7vh;
+    height: 100%;
 }
 
 .breadcrumb-item a {

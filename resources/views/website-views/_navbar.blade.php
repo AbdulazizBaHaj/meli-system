@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-style">
     <div class="container-fluid">
         <a class="navbar-brand ms-5" href="home">
-            <img src="assets\images\red-icon.png" alt="Logo" width="100" class="d-inline-block align-text-top">
+            <img src="{{ URL::asset('assets\images\red-icon.png') }}" alt="Logo" width="100"
+                class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,16 +11,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center nav-items">
                 <li class="nav-item">
-                    <a class="nav-link{{ request()->is('home') ? ' active' : '' }}" href="home">Home</a>
+                    <a class="nav-link{{ request()->is('home') ? ' active' : '' }}" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link{{ request()->is('calendar') ? ' active' : '' }}" href="calendar">Calendar</a>
+                    <a class="nav-link{{ request()->is('calendar') ? ' active' : '' }}" href="{{ route('calendar') }}">Calendar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link{{ request()->is('programs') ? ' active' : '' }}" href="programs">Programs</a>
+                    <a class="nav-link{{ request()->is('programs') ? ' active' : '' }}" href="{{ route('programs') }}">Programs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link{{ request()->is('contact-us') ? ' active' : '' }}" href="contact-us">Contact
+                    <a class="nav-link{{ request()->is('contact-us') ? ' active' : '' }}" href="{{ route('contact-us') }}">Contact
                         Us</a>
                 </li>
                 <li class="nav-item">

@@ -13,7 +13,7 @@
     </script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="icon" href="assets/images/icon.png" type="image/png">
+    <link rel="icon" href="{{ URL::asset('assets/images/icon.png') }}" type="image/png">
 
 
     {{-- Font --}}
@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-        
+
     @yield('styles')
 </head>
 

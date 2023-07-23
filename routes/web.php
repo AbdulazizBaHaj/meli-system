@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
     return view('website-views.index');
-});
+})->name('home');
 
 Route::get('/login', function () {
     return view('website-views.login');
@@ -31,12 +31,16 @@ Route::get('/otp', function () {
 
 Route::get('/contact-us', function () {
     return view('website-views.contact-us');
-});
+})->name('contact-us');
 
 Route::get('/calendar', function () {
     return view('website-views.calendar');
-});
+})->name('calendar');
 
 Route::get('/programs', function () {
     return view('website-views.program');
-});
+})->name('programs');
+
+Route::get('/programs/program-view', function () {
+    return view('website-views.program-view');
+})->name('program-view');

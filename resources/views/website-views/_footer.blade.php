@@ -2,7 +2,8 @@
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
             <div class="col-lg-4 d-flex align-items-center">
-                <img src="assets\images\red-icon.png" alt="" class="img-fluid" style="max-width: 100px">
+                <img src="{{ URL::asset('assets\images\red-icon.png') }}" alt="" class="img-fluid"
+                    style="max-width: 100px">
             </div>
 
             <div class="nav col-lg-4 justify-content-end">
