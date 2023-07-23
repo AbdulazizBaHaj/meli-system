@@ -17,9 +17,9 @@
     @include('website-views._breadcrumb')
 
     <section>
-        <div class="fluid-container prog-cards-section">
+        <div class="fluid-container prog-cards-section py-5 py-xl-6">
             <div class="row fluid-container">
-                <div class="col-3 p-3 filter-col">
+                <div class="col-md-3 p-3 filter-col my-3">
                     <div class="row mb-3">
                         <div class="col d-flex justify-content-start my-auto filter-text-h">
                             Filter
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-9">
+                <div class="col-md-9 my-3">
                     <div class="row mx-auto">
                         @for ($i = 1; $i <= 3; $i++)
                             <div class="col-md my-1">
