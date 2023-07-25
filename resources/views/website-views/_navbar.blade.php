@@ -23,9 +23,6 @@
                     <a class="nav-link{{ request()->is('contact-us') ? ' active' : '' }}" href="{{ route('contact-us') }}">Contact
                         Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link{{ request()->is('#ff') ? ' active' : '' }}" href="#ff">Home</a>
-                </li>
             </ul>
             <a href="{{ url('/login') }}">
                 <button class="btn btn-light login-btn text-center me-2" type="button"><i

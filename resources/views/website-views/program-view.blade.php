@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ URL::asset('assets/css/websiteCss/_contact-box.css') }}">
 @endsection
 
-@section('title', 'Programs')
+@section('title', 'Program view')
 
 @section('body')
 

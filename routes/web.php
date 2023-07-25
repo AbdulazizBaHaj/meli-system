@@ -44,3 +44,7 @@ Route::get('/programs', function () {
 Route::get('/programs/program-view', function () {
     return view('website-views.program-view');
 })->name('program-view');
+
+Route::get('/programs/program-view/admission-apply', function () {
+    return view('website-views.admission-apply');
+})->name('admission-apply');

@@ -52,9 +52,13 @@
     margin: auto;
 }
 
+.section-style {
+    width: 80%;
+}
+
 @media only screen and (max-width: 359px) {
     .q-title {
-        font-size: 16px;
+        font-size: 10px;
     }
 
     .q-btn {
@@ -64,13 +68,18 @@
 
     .q-sm-text {
         width: 100%;
+        font-size: 8.5px;
+    }
+
+    .section-style {
+        width: 100%;
     }
 }
 
 /* Screens between 360px and 575px */
 @media only screen and (max-width: 575px) and (min-width: 360px) {
     .q-title {
-        font-size: 25px;
+        font-size: 12px;
     }
 
     .q-btn {
@@ -79,6 +88,11 @@
     }
 
     .q-sm-text {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .section-style {
         width: 100%;
     }
 }
@@ -91,6 +105,10 @@
     }
 
     .q-sm-text {
+        width: 100%;
+    }
+
+    .section-style {
         width: 100%;
     }
 }
