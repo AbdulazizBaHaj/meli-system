@@ -121,6 +121,58 @@
     letter-spacing: 0em;
 }
 
+.modal-content {
+    background: white;
+    border-radius: 2px;
+    border: 1px solid rgba(237, 237, 237, 1);
+}
+
+.modal-header {
+    border-bottom: 0px;
+    display: block;
+}
+
+.modal-footer {
+    border-top: 0px;
+    display: block;
+}
+
+.modal-icon {
+    font-size: 60px;
+    color: #ff2a38;
+}
+
+.modal-red-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    color: rgba(255, 42, 56, 1);
+}
+
+.modal-sm-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(58, 57, 67, 1);
+}
+
+.home-btn {
+    background: #ff2a38;
+    color: rgba(255, 255, 255, 1);
+    width: 230px;
+    height: 60px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
 /* @media only screen and (max-width: 359px) {
     .send-btn {
         height: 40%;

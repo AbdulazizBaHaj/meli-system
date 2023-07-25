@@ -134,7 +134,32 @@
                             </div>
 
                             <div class="container text-center">
-                                <button class="btn send-btn text-center mt-5 mx-auto" type="submit">Send Now</button>
+                                <button class="btn send-btn text-center mt-5 mx-auto" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">Send Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h1 class="modal-title" id="exampleModalLabel"><i
+                                            class="bi bi-check-circle modal-icon"></i></h1>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <p class="modal-red-text">Thank You !</p>
+                                    <p class="modal-sm-text">Thank you for submitting your application to MELI! Your
+                                        application has been
+                                        received. Our team will review your application and get back to you soon.</p>
+                                </div>
+                                <div class="modal-footer text-center">
+                                    <a href="{{ route('home') }}">
+                                        <button type="button" class="btn btn-light home-btn">Back to Home</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
