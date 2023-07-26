@@ -20,7 +20,11 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    return view('website-views.index');
+    $contactController = new ContactController();
+    $aboutData = $contactController->getAboutData();
+    $stylizeLastWord = [$contactController, 'stylizeLastWord']; // Create a callable array
+
+    return view('website-views.index', compact('aboutData', 'stylizeLastWord'));
 })->name('home');
 
 Route::get('/login', function () {

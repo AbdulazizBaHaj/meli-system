@@ -23,6 +23,9 @@
     },
     "autoload": {
         "psr-4": {
+            "files\\": [
+                "app/Helpers/CustomHelpers.php"
+            ],
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"

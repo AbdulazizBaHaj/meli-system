@@ -22,9 +22,9 @@
             <p class="sm-text text-center">Welcome to our Website. We are glad to have you around.</p>
 
             <div class="container m-auto text-center p-1">
-                <div class="row container m-auto contact-div d-flex align-items-center">
-                    <div class="col-sm my-2 rounded-border-left">
-                        <div class="row container p-2 d-flex align-items-center">
+                <div class="row container m-auto contact-div d-flex align-items-center align-items-stretch">
+                    <div class="col-sm my-2 d-flex rounded-border-left">
+                        <div class="row container my-auto p-2 d-flex align-items-center">
                             <div class="col-4 contact-icon blue-bg-w d-flex justify-content-center align-items-center">
                                 <i class="bi bi-telephone-inbound"></i>
                             </div>
@@ -35,8 +35,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm my-2 border-center">
-                        <div class="row container p-2 d-flex align-items-center">
+                    <div class="col-sm my-2 d-flex border-center">
+                        <div class="row container my-auto p-2 d-flex align-items-center">
                             <div class="col-4 contact-icon red-bg-w d-flex justify-content-center align-items-center">
                                 <i class="bi bi-envelope"></i>
                             </div>
@@ -47,8 +47,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm my-2 rounded-border-right">
-                        <div class="row container p-2 d-flex align-items-center">
+                    <div class="col-sm my-2 d-flex rounded-border-right">
+                        <div class="row container my-auto p-2 d-flex align-items-center">
                             <div class="col-4 contact-icon blue-bg-w d-flex justify-content-center align-items-center">
                                 <i class="bi bi-geo-alt"></i>
                             </div>

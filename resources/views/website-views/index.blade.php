@@ -201,13 +201,8 @@
                         <div class="container">
                             <div class="container text-half">
                                 <div class="hr-line mb-3"></div>
-                                <h1 class="header-text">WHAT WE DO</h1>
-                                <p class="sm-text">MELI acquires the latest skills, knowledge and expertise through its
-                                    partnerships with some of the world's best logistics educational providers, to offer the
-                                    participants a variety of educational and training programs that would suit their
-                                    training needs. By adapting the "learning by doing" methodology as one of the basic
-                                    approaches applied in the programs, MELI assures that graduates will be equipped with
-                                    strong tools enabling them to contribute to the success of their organizations.</p>
+                                <h1 class="header-text"> {!! call_user_func($stylizeLastWord, $aboutData->about_p2_heading) !!}</h1>
+                                <p class="sm-text">{{ $aboutData->about_p2_text }}</p>
                                 <button class="btn btn-light discover-btn text-center me-2 mt-5" type="button">Contact
                                     Us</button>
                             </div>
@@ -370,16 +365,11 @@
     <section class="m-auto">
         <div class="container-fluid p-5 grid-background">
             <div class="container">
-                <h1 class="header-text text-center">Who is <span class="red-span">MELI</span></h1>
+                <h1 class="header-text text-center"> {!! call_user_func($stylizeLastWord, $aboutData->about_p1_heading) !!}</span></h1>
             </div>
             <div class="container-sm who-text mt-3 mb-3">
                 <p class="sm-text m-auto">
-                    Middle East Logistics Institute (MELI), established in Saudi Arabia in 2010, envisions being the
-                    leading-edge academic institute in the region. MELI seeks to build globally competitive logistics
-                    capacities to the business community in the Kingdom of Saudi Arabia through developing and improving
-                    both the awareness and logistics skills of young professionals, practitioners, managers and executives,
-                    providing them with specialized training in Logistics and Supply Chain Management and obtaining levels
-                    of professional certifications in the field of logistics.
+                    {{ $aboutData->about_p1_text }}
                 </p>
             </div>
             <div class="container text-center mt-5">
