@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\WebsiteControllers\ContactController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,9 +31,9 @@ Route::get('/otp', function () {
     return view('website-views.otp');
 });
 
-Route::get('/contact-us', function () {
-    return view('website-views.contact-us');
-})->name('contact-us');
+// Route::get('/contact-us', function () {
+//     return view('website-views.contact-us');
+// })->name('contact-us');
 
 Route::get('/calendar', function () {
     return view('website-views.calendar');
@@ -48,3 +50,5 @@ Route::get('/programs/program-view', function () {
 Route::get('/programs/program-view/admission-apply', function () {
     return view('website-views.admission-apply');
 })->name('admission-apply');
+
+Route::get('/contact-us', [ContactController::class, 'showContact'])->name('contact-us');

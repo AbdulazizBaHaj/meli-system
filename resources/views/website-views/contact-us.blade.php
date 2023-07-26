@@ -31,7 +31,7 @@
                             <div class="col-8 ms-3 my-auto text-start">
                                 <span class="contact-text">Phone Number</span>
                                 <br>
-                                <span class="contact-val">050 555 5555</span>
+                                <span class="contact-val">{{ $contactInfo->contact_phone }}</span>
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                             <div class="col-8 ms-3 my-auto text-start">
                                 <span class="contact-text">Email</span>
                                 <br>
-                                <span class="contact-val">info@meli.edu.sa</span>
+                                <span class="contact-val">{{ $contactInfo->contact_email }}</span>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                             <div class="col-8 ms-3 my-auto text-start">
                                 <span class="contact-text">Address</span>
                                 <br>
-                                <span class="contact-val">Dammam</span>
+                                <span class="contact-val">{{ $contactInfo->contact_address }}</span>
                             </div>
                         </div>
                     </div>
