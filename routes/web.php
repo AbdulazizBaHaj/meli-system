@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\WebsiteControllers\ContactController;
+use App\Http\Controllers\WebsiteControllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,11 +22,15 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
     $contactController = new ContactController();
+    $categoriesController = new CategoryController();
     $aboutData = $contactController->getAboutData();
-    $stylizeLastWord = [$contactController, 'stylizeLastWord']; // Create a callable array
+    $categories = $categoriesController->getCategory();
 
-    return view('website-views.index', compact('aboutData', 'stylizeLastWord'));
+
+    return view('website-views.index', compact('aboutData', 'categories'));
 })->name('home');
+
+
 
 Route::get('/login', function () {
     return view('website-views.login');

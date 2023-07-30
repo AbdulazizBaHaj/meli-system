@@ -201,7 +201,7 @@
                         <div class="container">
                             <div class="container text-half">
                                 <div class="hr-line mb-3"></div>
-                                <h1 class="header-text"> {!! call_user_func($stylizeLastWord, $aboutData->about_p2_heading) !!}</h1>
+                                <h1 class="header-text"> {!! $aboutData->about_p2_heading !!}</h1>
                                 <p class="sm-text">{{ $aboutData->about_p2_text }}</p>
                                 <button class="btn btn-light discover-btn text-center me-2 mt-5" type="button">Contact
                                     Us</button>
@@ -231,30 +231,11 @@
 
             <div class="container mt-5 mb-2">
                 <div class="row" id="progFilter">
-                    <div class="col-md prog-filter active-filter" onclick="filterSelection('all')">
-                        All
-                    </div>
-                    <div class="col-md prog-filter" onclick="filterSelection('ff')">
-                        No
-                    </div>
-                    <div class="col-md prog-filter">
-                        Cat
-                    </div>
-                    <div class="col-md prog-filter">
-                        Cat
-                    </div>
-                    <div class="col-md prog-filter">
-                        Cat
-                    </div>
-                    <div class="col-md prog-filter">
-                        Cat
-                    </div>
-                    <div class="col-md prog-filter">
-                        Cat
-                    </div>
-                    <div class="col-md prog-filter">
-                        Cat
-                    </div>
+                    @foreach ($categories as $category)
+                        <div class="col-md prog-filter" onclick="filterSelection('{{ $category->Category }}')">
+                            {{ $category->Category }}
+                        </div>
+                    @endforeach
                 </div>
                 <div>
                     <div class="dropdown-center text-center" id="dropdownProgFilter">
@@ -264,9 +245,11 @@
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li class="dropdown-menu-item" onclick="filterSelection('all')">Cat 1</li>
-                            <li class="dropdown-menu-item" onclick="filterSelection('hh')">Cat 2</li>
-                            <li class="dropdown-menu-item">Cat 3</li>
+                            @foreach ($categories as $category)
+                                <li class="dropdown-menu-item" onclick="filterSelection('{{ $category->Category }}')">
+                                    {{ $category->Category }}
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -284,7 +267,7 @@
                                     <div class="row row-cols-1 row-cols-md-3 g-4">
                             @endif
 
-                            <div class="col card-filter">
+                            <div class="col card-filter Logistics">
                                 <div class="card h-100">
                                     <img src="assets\images\websiteImg\prog-01.png" class="card-img-top m-auto img-fluid"
                                         alt="...">
@@ -365,7 +348,7 @@
     <section class="m-auto">
         <div class="container-fluid p-5 grid-background">
             <div class="container">
-                <h1 class="header-text text-center"> {!! call_user_func($stylizeLastWord, $aboutData->about_p1_heading) !!}</span></h1>
+                <h1 class="header-text text-center"> {!! $aboutData->about_p1_heading !!}</span></h1>
             </div>
             <div class="container-sm who-text mt-3 mb-3">
                 <p class="sm-text m-auto">
