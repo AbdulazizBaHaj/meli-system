@@ -19,6 +19,14 @@ class ContactController extends Controller
         return view('website-views.contact-us', ['contactInfo' => $contactInfo]);
     }
 
+    public function stylizeLastWord($text)
+    {
+        $words = explode(' ', $text);
+        $lastWord = array_pop($words);
+        $styledText = implode(' ', $words) . ' <span class="red-span">' . $lastWord . '</span>';
+        return $styledText;
+    }
+
     public function getAboutData()
     {
         $aboutData = CmsGeneral::select(
@@ -30,18 +38,6 @@ class ContactController extends Controller
             'about_p2_image'
         )->first();
 
-        // Stylize the last word in 'about_p1_text'
-        $aboutData->about_p1_heading = $this->stylizeLastWord($aboutData->about_p1_heading);
-        $aboutData->about_p2_heading = $this->stylizeLastWord($aboutData->about_p2_heading);
-
         return $aboutData;
-    }
-
-    private function stylizeLastWord($text)
-    {
-        $words = explode(' ', $text);
-        $lastWord = array_pop($words);
-        $styledText = implode(' ', $words) . ' <span class="red-span">' . $lastWord . '</span>';
-        return $styledText;
     }
 }
