@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\WebsiteControllers\ContactController;
 use App\Http\Controllers\WebsiteControllers\CategoryController;
+use App\Http\Controllers\WebsiteControllers\ProgramCardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,11 +24,13 @@ Route::get('/', function () {
 Route::get('/home', function () {
     $contactController = new ContactController();
     $categoriesController = new CategoryController();
+    $programCardController = new ProgramCardController();
     $aboutData = $contactController->getAboutData();
     $categories = $categoriesController->getCategory();
+    $programCards = $programCardController->getCoursesAndCertifications();
 
 
-    return view('website-views.index', compact('aboutData', 'categories'));
+    return view('website-views.index', compact('aboutData', 'categories', 'programCards'));
 })->name('home');
 
 
