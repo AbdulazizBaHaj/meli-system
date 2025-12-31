@@ -89,7 +89,7 @@ A comprehensive Learning Management System (LMS) built with Laravel, designed to
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/AbdulazizBaHaj/meli-system
+git clone https://github.com/AbdulazizBaHaj/meli-system.git
 cd meli-system
 ```
 
@@ -201,10 +201,6 @@ Contributions are welcome! Please follow these steps:
 ## 📄 License
 
 This project is proprietary software developed for Majdouie E-Learning Institute.
-
-## 📞 Support
-
-For support and inquiries, please contact the development team or visit our website.
 
 ---
 
