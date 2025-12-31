@@ -6,11 +6,11 @@ A comprehensive Learning Management System (LMS) built with Laravel, designed to
 
 ### Desktop View
 
-[![Desktop View](public/assets/images/showcase/home-desktop.png)](public/assets/images/showcase/home-desktop.png)
+[Home - Desktop View](public/assets/images/showcase/home-desktop.png)
 
 ### Mobile View
 
-[![Mobile View](public/assets/images/showcase/home-mobile.png)](public/assets/images/showcase/home-mobile.png)
+[Home - Mobile View](public/assets/images/showcase/home-mobile.png)
 
 ## 🚀 Features
 
