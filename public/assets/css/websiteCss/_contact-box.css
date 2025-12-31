@@ -1,0 +1,114 @@
+.q-div {
+    border-radius: 13px;
+    background-image: url("/assets/images/websiteImg/q-img.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.q-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.q-btn {
+    height: 70px;
+    width: 260px;
+    color: #ff2a38;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.q-btn:hover {
+    background: #ff2a38;
+    border: 1px solid #ff2a38;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.q-sm-text {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.section-style {
+    width: 80%;
+}
+
+@media only screen and (max-width: 359px) {
+    .q-title {
+        font-size: 10px;
+    }
+
+    .q-btn {
+        height: 40%;
+        width: 80%;
+    }
+
+    .q-sm-text {
+        width: 100%;
+        font-size: 8.5px;
+    }
+
+    .section-style {
+        width: 100%;
+    }
+}
+
+/* Screens between 360px and 575px */
+@media only screen and (max-width: 575px) and (min-width: 360px) {
+    .q-title {
+        font-size: 12px;
+    }
+
+    .q-btn {
+        height: 40%;
+        width: 80%;
+    }
+
+    .q-sm-text {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .section-style {
+        width: 100%;
+    }
+}
+
+/* Screens between 576px and 899px */
+@media only screen and (max-width: 899px) and (min-width: 576px) {
+    .q-btn {
+        height: 50%;
+        width: 80%;
+    }
+
+    .q-sm-text {
+        width: 100%;
+    }
+
+    .section-style {
+        width: 100%;
+    }
+}
